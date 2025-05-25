@@ -1,9 +1,11 @@
 #include "SparseMatrix.h"
 #include <iostream>
+#include <algorithm>
 #include <fstream>
 #include <sstream>
 #include <stdexcept>
 #include <cctype>
+
 
 SparseMatrix::SparseMatrix(int numRows, int numCols) {
     rows = numRows;
