@@ -7,12 +7,12 @@ int main() {
         std::cout << "Sparse Matrix Operations\n";
         std::cout << "========================\n";
         std::string file1, file2, operation;
-std::cout << "Enter path to first matrix file: ";
-std::getline(std::cin, file1);
-std::cout << "Enter path to second matrix file: ";
-std::getline(std::cin, file2);
-std::cout << "Choose operation (add, subtract, multiply): ";
-std::getline(std::cin, operation);
+        std::cout << "Enter path to first matrix file: ";
+        std::getline(std::cin, file1);
+        std::cout << "Enter path to second matrix file: ";
+        std::getline(std::cin, file2);
+        std::cout << "Choose operation (add, subtract, multiply): ";
+        std::getline(std::cin, operation);
 
         SparseMatrix A(file1);
         SparseMatrix B(file2);

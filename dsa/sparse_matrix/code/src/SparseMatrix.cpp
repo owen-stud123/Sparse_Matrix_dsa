@@ -33,6 +33,7 @@ SparseMatrix::SparseMatrix(const std::string& filePath) {
     std::string line;
     while (std::getline(file, line)) {
         if (line.empty()) continue;
+        if (line.substr(0, 2) == "//") continue; // Skip comment lines
         if (line.find("rows=") == 0) rows = std::stoi(line.substr(5));
         else if (line.find("cols=") == 0) cols = std::stoi(line.substr(5));
         else break;
@@ -42,6 +43,7 @@ SparseMatrix::SparseMatrix(const std::string& filePath) {
     for (int i = 0; i < rows; i++) elements[i] = nullptr;
 
     do {
+        if (line.substr(0, 2) == "//") continue;
         line.erase(remove_if(line.begin(), line.end(), isspace), line.end());
         if (line.empty()) continue;
         if (line[0] != '(' || line.back() != ')')
