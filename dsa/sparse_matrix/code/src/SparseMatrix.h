@@ -12,6 +12,11 @@ public:
 
     SparseMatrix(const std::string& filePath);
     SparseMatrix(int numRows, int numCols);
+    
+    // Rule of Three - Copy constructor and assignment operator
+    SparseMatrix(const SparseMatrix& other);
+    SparseMatrix& operator=(const SparseMatrix& other);
+    
     ~SparseMatrix();
 
     int getElement(int row, int col);
