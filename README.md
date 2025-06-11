@@ -12,7 +12,7 @@ This project provides a memory efficient implementation for working with sparse 
 ### Clone the Repository
 ```bash
 git clone https://github.com/owen-stud123/Sparse_Matrix_dsa.git
-cd Sparse_Matrix_dsa/dsa/sparse_matrix/code/
+cd Sparse_Matrix_dsa/dsa/sparse_matrix/code/src
 ```
 Compilation
 ```
